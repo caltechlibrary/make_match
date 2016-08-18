@@ -1,0 +1,8 @@
+<div id="mysearch" style="display:none">ep.SearchTerm</div>
+
+<script type="text/javascript" language="Javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script type="text/javascript">
+$('.related-info-area:contains("Exact Match...")', window.parent.document).css('display','none');
+
+var searchterm = document.getElementById('mysearch').innerHTML.toLowerCase();
+

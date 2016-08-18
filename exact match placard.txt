@@ -1,0 +1,25 @@
+<div id="mysearch" style="display:none">ep.SearchTerm</div>
+
+<script type="text/javascript" language="Javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script type="text/javascript">
+$('.related-info-area:contains("Exact Match...")', window.parent.document).css('display','none');
+
+var searchterm = document.getElementById('mysearch').innerHTML.toLowerCase();
+
+if((searchterm == "science") || (searchterm == "ti science") || (searchterm == "so science")){
+    $('.placard-container', window.parent.document).css("display","none");
+    resultdiv1 = '<div class="knownitems" id="Placard_widget" style="border-width:2px;border-color:#12408c;background-color:#cde2f8;padding:10px;"><div style="float:left; padding:10px;"><p style="font-size:140%;font-weight:bold;color:black;">Looking for the journal <em>Science</em>?</p></div><div style="float:left;padding:10px;"><p style="font-size:12px;padding-top:1px"><ul><li><a href="https://clsproxy.library.caltech.edu/login?url=http://www.sciencemag.org/archive" style="text-decoration:none;" target="_blank">Access all issues 1997 to current</a></li><li><a href="https://clsproxy.library.caltech.edu/login?url=http://www.jstor.org/journals/00368075.html" style="text-decoration:none;" target="_blank">Access issues from 1880 to 5 years ago through JSTOR</a></li></ul></div></div></div>';
+    $('.result-list', window.parent.document).before(resultdiv1);
+   
+} else if ((searchterm == "wos") || (searchterm == "web of science") || (searchterm == "ti web of science") || (searchterm == "ti wos")|| (searchterm == "so web of science") || (searchterm == "so wos")){
+    $('.placard-container', window.parent.document).css("display","none");
+    resultdiv1 = '<div class="knownitems" id="Placard_widget" style="border-width:2px;border-color:#12408c;background-color:#cde2f8;padding:10px;"><div style="float:left; padding:10px;"><p style="font-size:120%;font-weight:bold;color:black;">Access <a href="https://clsproxy.library.caltech.edu/login?url=http://isiknowledge.com/wos" target="_blank"><em>Web of Science</em></a> directly.</p></div></div></div>';
+    $('.result-list', window.parent.document).before(resultdiv1);
+   
+} else if ((searchterm == "microwave") || (searchterm == "microwave journal") || (searchterm == "ti microwave journal") || (searchterm == "ti microwave")|| (searchterm == "so microwave journal") || (searchterm == "so microwave")){
+    $('.placard-container', window.parent.document).css("display","none");
+    resultdiv1 = '<div class="knownitems" id="Placard_widget" style="border-width:2px;border-color:#12408c;background-color:#cde2f8;padding:10px;"><div style="float:left; padding:10px;"><p style="font-size:120%;font-weight:bold;color:black;">Access <a href="https://clsproxy.library.caltech.edu/login?url=http://search.ebscohost.com/direct.asp?db=a9h&jn=0OY&scope=site" target="_blank"><em>Microwave Journal</em></a> directly.</p></div></div></div>';
+    $('.result-list', window.parent.document).before(resultdiv1);
+   
+}
+</script>

@@ -12,9 +12,9 @@ and return formatted code for the Ebsco EDS exact match search box
   link_file         link_file is a csv KBART-inspired file. It requires
                     publication_title and title_url. Optional fields include
                     date_first_issue_online,date_last_issue_online,
-                    abbreviation (separated by ; ), no_proxy (mark with 1 for
-                    open access titles). The date section, url, and proxy can
-                    be repeated.
+                    abbreviation (multiple abbreviations separated by ; )
+                    , no_proxy (mark with 1 for open access titles). 
+                    The date section and url can be repeated.
 
 optional arguments:
   -h, --help        show this help message and exit
